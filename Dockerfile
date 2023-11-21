@@ -12,6 +12,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Comando para iniciar o servidor Flask
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app:app"]
-
+CMD ["bash", "-c", "gunicorn --bind 0.0.0.0:8000 app:app"]
 
