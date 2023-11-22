@@ -11,7 +11,7 @@ def processar_imagens():
     if not imagens:
         return jsonify({'error': 'Nenhuma imagem recebida'}), 400
 
-    resultados = ["ola"]
+    resultados = []
 
     for imagem in imagens:
         # Lê a imagem e converte para base64
